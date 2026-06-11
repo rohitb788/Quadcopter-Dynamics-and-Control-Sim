@@ -6,14 +6,6 @@ Translational Dyanmics
 mẍ = [0 0 -mg] + R^T [0 0 T]
 
 Rotational Dynamics
-## Overview
-Nonlinear 6-DOF quadrotor dynamics simulation built from first principles in Python. Implements Newton-Euler equations of motion with quaternion kinematics, RK4 numerical integration, a cascaded PID controller, and an LQR controller linearized around hover.
-
-## Physics
-Translational Dyanmics
-mẍ = [0 0 -mg] + R^T [0 0 T]
-
-Rotational Dynamics
 Iω̇  = T_total - w x (Iw)
 
 Quaternion 
