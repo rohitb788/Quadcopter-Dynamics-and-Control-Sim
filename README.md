@@ -28,7 +28,7 @@ Rigid body, no aerodynamic drag, no wind, no rotor dynamics (instantaneous thrus
 ## Controllers
 PID Controller - Two loops, inner loop controls attitude and outer loop controlls altitude. Uses hand tuned gains and error states to compute rotor thrusts.
 There are 6 controllers in a cascade - altitude, roll, pitch, yaw, x-position, y-position - fed into a mixer that solves thrust allocation.
-LQR Controller - Linear Quadratic Regulator. Solves an optimization problem given two human made constraits, one that penalizes state error and another that penalizes control effort. The controller solves the opitmization problem and controls the craft accordingly. 
+LQR Controller - Linear Quadratic Regulator. Solves an optimization problem given two human made constraits, one that penalizes state error and another that penalizes control effort. The controller solves the opitmization problem and controls the craft accordingly. Valid for small perturbations around hover due to linearization assumption. Demonstrated on stabilization task, not waypoint navigation.
 
 ## Results
 There are 3 sims, all of them output 2 things, a 3-d path plot, and 3 state vs time positon plots
